@@ -26,7 +26,7 @@ import { set } from 'express/lib/application';
 const Home = () => {
 
     const [currentPage, setCurrentPage] = useState(1);  
-    const [price, setPrice] = useState([1,1000]);
+    const [price, setPrice] = useState([1,500000]);
     const [category, setCategory] = useState('');
     const [rating,setRating] = useState(0);
     const categories = [
@@ -85,11 +85,11 @@ const Home = () => {
                                                 range
                                                 marks={{
                                                     1 : "₹1",
-                                                    1000 : "₹1000"
+                                                    500000 : "₹500000"
                                                 }}
                                                 min = {1}
-                                                max = {1000}
-                                                defaultValue = {[1,1000]}
+                                                max = {500000}
+                                                defaultValue = {[1,500000]}
                                                 tipFormatter={value => `₹${value}`}
                                                 tipProps ={{
                                                     placement: "top",
