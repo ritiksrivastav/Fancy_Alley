@@ -69,7 +69,8 @@ const Login = () => {
                             onChange = {(e) => setPassword(e.target.value)}
                         />
                         </div>
-
+                        
+                        <Link to="/loginqr" className="float-left mb-4">Login with QR?</Link>
                         <Link to="/password/forgot" className="float-right mb-4">Forgot Password?</Link>
             
                         <button

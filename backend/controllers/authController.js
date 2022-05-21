@@ -1,11 +1,12 @@
 const User = require('../models/user')
-
+const QRCode = require("../models/qrcode");
 const ErrorHandler = require('../utils/errorHandler');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const sendToken = require('../utils/jwtToken');
 const sendEmail = require('../utils/sendEmail')
 const crypto = require('crypto')
 const cloudinary = require('cloudinary')
+const qrcode = require("../qrgenerator/qrcode");
 
 // Register a new User => /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req,res,next) => {
@@ -59,6 +60,57 @@ exports.loginUser = catchAsyncErrors(async (req,res,next) => {
     sendToken(user, 200, res)
 
 })
+
+// generate the QR Code => /api/v1/qrgenerate
+exports.generateQR = catchAsyncErrors(async (req,res,next)=>{
+    const tokenID = crypto.randomBytes(15).toString("hex");
+    // const tokenID = '65ff5ad823736b8f1f244e600a4a39';
+    let dataURL=await qrcode(`https://fancyalley.herokuapp.com/api/v1/qr/${tokenID}`);
+    const qr = await QRCode.create({
+        tokenID,
+    })
+
+    res.status(200).send({dataURL,tokenID});
+})
+
+// Mobile will scan and send the info in this controller => /api/v1/qr/:tokenID
+exports.verifyQR = catchAsyncErrors(async (req,res,next)=>{
+
+    const {email} = req.body;
+    const {tokenID} = req.param;
+
+    console.log(email);
+    const qr = await QRCode.findOneAndUpdate({tokenID : req.params.tokenID},{email : req.body.email},{new:true})
+
+    if (!qr) {
+      return next(
+        new ErrorHandler("QRCode is expired, please refresh it again", 404)
+      );
+    }
+
+    // console.log(qr);
+    res.status(200).send("Success");
+}
+)
+
+// after mobile is scanned this controller start the login process => /api/v1/loginqr
+exports.loginQR = catchAsyncErrors(async (req,res,next)=>{
+    const {tokenID} = req.params;
+
+    const qr = await QRCode.findOne({tokenID : tokenID});
+    
+    if (!qr) {
+      return next(new ErrorHandler("QRCode is expired, please refresh it again", 404));
+    }
+    // console.log(qr.email)
+    const user = await User.findOne({email : qr.email});
+    // console.log(user);
+    if(user == null)
+        res.status(200).send(user);
+     
+    sendToken(user, 200, res);
+})
+
 
 // forgot password => /api/v1/password/forgot
 exports.forgotPassword = catchAsyncErrors(async (req,res,next)=>{
