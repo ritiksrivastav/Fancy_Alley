@@ -1,7 +1,7 @@
 # FancyAlley - An Ecommerce Project 
 ## A full-feldged ecommerce application including the mobile app.
 
-## Explore the wide range of products in our application where the user can easily Login through the app using QR Code.
+## Explore the wide range of products in our application where the user can easily Login through the website using QR Code with Mobile Application.
 
 # Explore it now: 
 
