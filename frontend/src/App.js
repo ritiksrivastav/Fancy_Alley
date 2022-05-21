@@ -14,6 +14,8 @@ import Cart from './components/cart/Cart'
 
 import Login from './components/user/Login';
 
+import LoginQR from "./components/user/LoginQR";
+
 import UpdateProfile from './components/user/UpdateProfile';
 
 import Register from './components/user/Register';
@@ -87,6 +89,7 @@ function App() {
         <Route path="/search/:keyword" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/loginqr" element={<LoginQR />} />
         <Route path="/password/forgot" element={<ForgotPassword />} />
         <Route path="/password/reset/:token" element={<NewPassword />} />
         <Route path="/register" element={<Register />} />

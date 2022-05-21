@@ -4,6 +4,9 @@ const router = express.Router();
 const { 
     registerUser,
     loginUser,
+    generateQR,
+    verifyQR,
+    loginQR,
     logout,
     allUsers,
     updateUser, 
@@ -21,6 +24,10 @@ const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/auth')
 
 router.route('/register').post(registerUser);
 router.route('/login').post(loginUser);
+
+router.route("/qrgenerator").get(generateQR);
+router.route("/qr/:tokenID").post(verifyQR);
+router.route("/loginqr/:tokenID").post(loginQR);
 
 router.route('/password/forgot').post(forgotPassword)
 router.route('/password/reset/:token').put(resetPassword)

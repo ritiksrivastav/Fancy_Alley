@@ -1,7 +1,10 @@
 import {
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAIL,
+    LOGIN_FAIL,  
+    QR_REQUEST,
+    QR_SUCCESS,
+    QR_FAIL,
     REGISTER_USER_REQUEST,
     REGISTER_USER_SUCCESS,
     REGISTER_USER_FAIL,
@@ -45,6 +48,7 @@ export const authReducer = (state = { user: {} }, action) => {
     switch (action.type) {
 
         case LOGIN_REQUEST:
+        case QR_REQUEST:
         case REGISTER_USER_REQUEST:
         case LOAD_USER_REQUEST:
             return {
@@ -53,6 +57,7 @@ export const authReducer = (state = { user: {} }, action) => {
             }
 
         case LOGIN_SUCCESS:
+        case QR_SUCCESS:
         case REGISTER_USER_SUCCESS:
         case LOAD_USER_SUCCESS:
             return {
@@ -84,6 +89,7 @@ export const authReducer = (state = { user: {} }, action) => {
             }
 
         case LOGIN_FAIL:
+        case QR_FAIL:
         case REGISTER_USER_FAIL:
             return {
                 ...state,

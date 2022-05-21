@@ -3,6 +3,9 @@ import {
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
+    QR_REQUEST,
+    QR_SUCCESS,
+    QR_FAIL,
     REGISTER_USER_REQUEST,
     REGISTER_USER_SUCCESS,
     REGISTER_USER_FAIL,
@@ -60,6 +63,25 @@ export const login = (email, password) => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: LOGIN_FAIL,
+            payload: error.response.data.message
+        })
+    }
+}
+
+// Login using QRCode
+export const loginQR = (data) => async (dispatch) => {
+    try {
+
+        dispatch({ type: QR_REQUEST })
+
+        dispatch({
+            type: QR_SUCCESS,
+            payload: data.user
+        })
+
+    } catch (error) {
+        dispatch({
+            type: QR_FAIL,
             payload: error.response.data.message
         })
     }
