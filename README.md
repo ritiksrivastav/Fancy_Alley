@@ -5,8 +5,8 @@
 
 # Explore it now: 
 
-[Link to Website](http://fancyalley.herokuapp.com)
+[Visit Website](http://fancyalley.herokuapp.com)
 
 ## Download the app from here: 
 
-[Link to Website](https://drive.google.com/drive/folders/1nVEsp4ACfxF6PqHrKN7KK4YwqiW21bZX)
+[Download the App](https://drive.google.com/drive/folders/1nVEsp4ACfxF6PqHrKN7KK4YwqiW21bZX)
