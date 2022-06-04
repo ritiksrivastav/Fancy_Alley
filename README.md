@@ -5,17 +5,15 @@
 
 ### Here is Application Homepage with the products listed: 
 
-<br>
 ![alt text](https://i.imgur.com/QM12sI5.png)
 <br>
 
-<br>
 ![alt text](https://i.imgur.com/uPEtu9M.png)
 <br>
 
 ## Description of a Product:
 
-<br>
+
 ![alt text](https://i.imgur.com/o8ZsGKE.png)
 <br>
 
@@ -24,19 +22,18 @@ There are no different login for Admins, the application will recognize the admi
 
 ### Register:
 
-<br>
+
 ![alt text](https://i.imgur.com/6pyP9ph.png)
 <br>
 
 ### Login using Email:
 
-<br>
+
 ![alt text](https://i.imgur.com/Xc66DSP.png)
 <br>
 
 ### Login using QR code:
 
-<br>
 ![alt text](https://i.imgur.com/lVmjtMT.png)
 <br>
 
@@ -44,13 +41,13 @@ There are no different login for Admins, the application will recognize the admi
 
 ### Cart : 
 
-<br>
+
 ![alt text](https://i.imgur.com/vCjhMZy.png)
 <br>
 
 ## Admin Dashboard: 
 
-<br>
+
 ![alt text](https://i.imgur.com/Q1Vei1O.png)
 <br>
 
