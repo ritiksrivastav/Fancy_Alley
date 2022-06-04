@@ -5,7 +5,7 @@
 
 ### Here is Application Homepage with the products listed: 
 
-<img src="https://i.imgur.com/QM12sI5.png" width="700" height="300">
+<img src="https://i.imgur.com/QM12sI5.png" width="600" height="300">
 <br>
 
 ![alt text](https://i.imgur.com/uPEtu9M.png)
