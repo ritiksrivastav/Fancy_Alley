@@ -8,13 +8,12 @@
 <img src="https://i.imgur.com/QM12sI5.png" width="600" height="300">
 <br>
 
-![alt text](https://i.imgur.com/uPEtu9M.png)
+<img src="https://i.imgur.com/uPEtu9M.png" width="600" height="300">
 <br>
 
 ## Description of a Product:
 
-
-![alt text](https://i.imgur.com/o8ZsGKE.png)
+<img src="https://i.imgur.com/o8ZsGKE.png" width="600" height="300">
 <br>
 
 ### A user can register in the website as well as app or can login via email or scanning QR code from mobile app only if logged in the app.
@@ -22,33 +21,28 @@ There are no different login for Admins, the application will recognize the admi
 
 ### Register:
 
-
-![alt text](https://i.imgur.com/6pyP9ph.png)
+<img src="https://i.imgur.com/6pyP9ph.png" width="600" height="300">
 <br>
 
 ### Login using Email:
 
-
-![alt text](https://i.imgur.com/Xc66DSP.png)
+<img src="https://i.imgur.com/Xc66DSP.png" width="600" height="300">
 <br>
 
 ### Login using QR code:
-
-![alt text](https://i.imgur.com/lVmjtMT.png)
+<img src="https://i.imgur.com/lVmjtMT.png" width="600" height="300">
 <br>
 
 ## Given the vast range of products , a user can add the products to the cart and complete the shipping information and payment method. Admin can see all the orders, products, users and reviews in the dashboard.  
 
 ### Cart : 
 
-
-![alt text](https://i.imgur.com/vCjhMZy.png)
+<img src="https://i.imgur.com/vCjhMZy.png" width="600" height="300">
 <br>
 
 ## Admin Dashboard: 
 
-
-![alt text](https://i.imgur.com/Q1Vei1O.png)
+<img src="https://i.imgur.com/Q1Vei1O.png" width="600" height="300">
 <br>
 
 ## There is lot more to explore in our application, do check it out. Link is below.
