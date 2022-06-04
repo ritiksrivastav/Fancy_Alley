@@ -1,9 +1,8 @@
 # FancyAlley - An Ecommerce Project 
-## A full-feldged ecommerce application including the mobile app.
-
-## Explore the wide range of products in our application where the user can easily Login through the website using QR Code with Mobile Application.
+### A full-feldged ecommerce application including the mobile app in which you can explore the wide range of products in our application where the user can easily Login through the website using QR Code with Mobile Application.
 
 ### Here is Application Homepage with the products listed: 
+<br>
 
 <img src="https://i.imgur.com/QM12sI5.png" width="600" height="300">
 <br>
@@ -54,3 +53,9 @@ There is no different login for Admins, the application will recognize the admin
 ## Download the app from here: 
 
 [Download the App](https://drive.google.com/drive/folders/1nVEsp4ACfxF6PqHrKN7KK4YwqiW21bZX)
+
+## License
+
+© 2022 Ritik Srivastav
+
+This repository is licensed under the MIT license. See LICENSE for details.
