@@ -17,7 +17,7 @@
 <br>
 
 ### A user can register in the website as well as app or can login via email or scanning QR code from mobile app only if logged in the app.
-There are no different login for Admins, the application will recognize the admin's email and open a dashboard to monitor the application.
+There is no different login for Admins, the application will recognize the admin's email and open a dashboard to monitor the application.
 
 ### Register:
 
