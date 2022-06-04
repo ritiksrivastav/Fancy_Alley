@@ -33,14 +33,14 @@ There is no different login for Admins, the application will recognize the admin
 <img src="https://i.imgur.com/lVmjtMT.png" width="600" height="300">
 <br>
 
-## Given the vast range of products , a user can add the products to the cart and complete the shipping information and payment method. Admin can see all the orders, products, users and reviews in the dashboard.  
+### Given the vast range of products , a user can add the products to the cart and complete the shipping information and payment method. Admin can see all the orders, products, users and reviews in the dashboard.  
 
 ### Cart : 
 
 <img src="https://i.imgur.com/vCjhMZy.png" width="600" height="300">
 <br>
 
-## Admin Dashboard: 
+### Admin Dashboard: 
 
 <img src="https://i.imgur.com/Q1Vei1O.png" width="600" height="300">
 <br>
